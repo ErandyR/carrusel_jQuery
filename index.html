@@ -4,20 +4,39 @@
     <meta charset="utf-8">
     <title>Carrusel jQuery</title>
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/gridstyle.css">
   </head>
   <body>
-    <section>
-      <div class="contenedorImagenes" width="500px" heigth="500px">
-        <img src="https://dummyimage.com/1000x1000" width="50%" height="50%">
-        <img src="" >
-        <img src="">
-        <img src="">
-        <img src="">
+    <section class="container">
+      <div class="row">
+        <div class="col-2">
+          <a class="anterior pull-rigth bajarFlechas">&#10094;</a>
+        </div>
+        <div class="contenedorImagenes col-8">
+          <img src="https://dummyimage.com/800x500" class="imagenes ancho" id="imagen1">
+          <img src="https://dummyimage.com/800x500" class="imagenes" id="imagen2">
+          <img src="https://dummyimage.com/800x500" class="imagenes" id="imagen3">
+          <img src="https://dummyimage.com/800x500" class="imagenes" id="imagen4">
+          <img src="https://dummyimage.com/800x500" class="imagenes" id="imagen5">
+        </div>
+        <div class="col-2 displeyFlex">
+            <a class="siguiente pull-left bajarFlechas">&#10095;</a>
+        </div>
       </div>
+      <div class="row">
+        <div style="text-align:center">
+          <span class="dot" id="dot1"></span>
+          <span class="dot" id="dot2"></span>
+          <span class="dot" id="dot3"></span>
+          <span class="dot" id="dot4"></span>
+          <span class="dot" id="dot5"></span>
+        </div>
+      </div>
+
     </section>
 
 
-    <script src="js/jquery-3.2.1.min.js">  </script>
-    <script type="text/javascript" src="js/app.js">    </script>
+    <script src="assets/js/jquery-3.2.1.min.js">  </script>
+    <script type="text/javascript" src="assets/js/app.js">    </script>
   </body>
 </html>
